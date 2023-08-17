@@ -1,0 +1,28 @@
+<!-- 44. How to define an inline frame? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="43.html"></iframe> <br>
+
+    <!-- a. How to specify the height of an iframe element? -->
+    <!-- f. How to specify the width of an iframe element? -->
+    <iframe src="43.html" height="300px" width="300px"></iframe> <br>
+
+     <!-- 44. How to define an inline frame? -->
+    <!-- frame_a hera a is for attribut -->
+    <iframe src="43.html" name="frame_a"></iframe>
+    <a href="43.html" target="frame_a"> 43html</a> <br>
+
+    <!-- c. How to enable an extra set of restrictions for the content in an iframe element? -->
+    <!-- d. How to specify the address of the document to embed in the iframe element? src is the adress  -->
+    <iframe src="43.html" name="frame_a" sandbox=""></iframe> <br>
+
+    <!-- e. How to specify the HTML content of the page to show in the iframe element? -->
+    <iframe srcdoc="<P> html document </P>" src="43.html"></iframe> <br>
+</body>
+</html>

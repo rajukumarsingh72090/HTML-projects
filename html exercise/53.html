@@ -1,0 +1,57 @@
+<!-- 53. How to define the relationship between a document and external resources? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="link.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>PHP Tutorial</li>
+        <li>JavaScript Tutorial</li>
+        <li>MySQL Tutorial</li>
+        </ul> <hr>
+
+        <!-- a. How to specify the location of the linked document? -->
+        <img src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example " width="308" height="190" border="0" usemap="#Map">
+
+        <map name="Map">
+        <area shape="rect" coords="8,5,100,77"   href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql   tutorial">
+        <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial" >
+        <area shape="rect" coords="197,136,306,188"  href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials">                                                                                      
+        </map> <hr>
+
+        <!-- b. How to specify the language of the text in the linked document? -->
+        <img src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example " width="308" height="190" border="0" usemap="#Map">
+
+        <map name="Map">
+        <area shape="rect" coords="8,5,100,77"   href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql tutorial" hreflang="en">
+        <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial" hreflang="en">
+        <area shape="rect" coords="197,136,306,188"  href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials" hreflang="en">                                                                                      
+        </map> <hr>
+
+        <!-- c. How to Specify on what device the linked document will be displayed? -->
+        <img src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example " width="308" height="190" border="0" usemap="#Map">
+
+        <map name="Map">
+        <area shape="rect" coords="8,5,100,77"   href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql tutorial" media="handheld">
+        <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial" media="handheld">
+        <area shape="rect" coords="197,136,306,188"  href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials" media="handheld">                                                                                      
+        </map> <hr>
+
+        <!-- d. How to specify the relationship between the current document and the linked document? -->
+        <img src="https://www.w3resource.com/w3r_images/html-area-element.png" alt="area example " width="308" height="190" border="0" usemap="#Map">  
+         <map name="Map">  
+         <area shape="rect" coords="8,5,100,77" href="https://www.w3resource.com/mysql/mysql-tutorials.php" target="_blank" alt="mysql tutorial" rel="alternate">  
+         <area shape="circle" coords="155,93,59" href="https://www.w3resource.com/php/php-home.php" target="_blank" alt="php tutorial" rel="alternate">  
+         <area shape="rect" coords="197,136,306,188" href="https://www.w3resource.com/sql/sql-tutorials.php" alt="sql tutorials" rel="alternate">  
+        </map> <hr>
+
+        <!-- e. How to specify the size of the linked resource? -->
+        <h2>Tutorial</h2>
+          <p>Open this page in a <a href="http://localhost/html-css-exercise/basic/solution/exercise-link-size-tag-answer.html" target="_blank">new window</a> to see the favicon.</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!-- 59. How to define a scalar measurement within a known range? -->
+<!-- a. How to specify the range that is considered to be a high value? -->
+<!-- b. How to specify the range that is considered to be a low value? -->
+<!-- c. How to specify the maximum value of the range? -->
+<!-- d. How to specify the minimum value of the range? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Display a gauge value here:</p>
+<meter value="2" min="0" max="20">2 out of 20</meter><br>
+<meter value="0.5">50%</meter> <hr>
+
+<!-- e. How to specify what value is the optimal value for the gauge? -->
+<p>Display a gauge value here:</p>
+<p><meter value="0.3" high="0.8" low="0.1" optimum="0.4"></meter></p> <hr>
+
+<!-- f. How to require the current value of the gauge? -->
+<p>Display a gauge value here:</p>
+<p>Harry's score: <meter min="0" low="20" high="80" max="100" value="90"></meter></p>
+<p>James's score: <meter min="0" low="20" high="80" max="100" value="60"></meter></p>
+<p>David's score: <meter min="0" low="20" high="80" max="100" value="30"></meter></p>
+</body>
+</html>

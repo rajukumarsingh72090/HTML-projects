@@ -1,0 +1,34 @@
+<!-- 8. How to embed audio in a HTML document? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>audio</h1>
+    <audio controls src="mixkit-arcade-game-jump-coin-216.wav"></audio>
+
+    <!-- a. How to autoplay an audio -->
+    <!-- b. How to add controls to an audio -->
+    <audio  controls autoplay>
+        <source src="mixkit-arcade-game-jump-coin-216.wav" type="audio/ogg" >
+    </audio>
+
+    <!-- c. How to play an audio repeatedly -->
+    <audio  controls autoplay loop>
+        <source src="mixkit-arcade-game-jump-coin-216.wav" type="audio/ogg" >
+    </audio>
+
+    <!-- d. How to mute an audio -->
+    <audio  controls muted>
+        <source src="mixkit-arcade-game-jump-coin-216.wav" type="audio/ogg" >
+    </audio>
+
+    <!-- e. How to preload an audio -->
+    <audio  controls muted preload="auto">
+        <source src="mixkit-arcade-game-jump-coin-216.wav" type="audio/ogg" >
+    </audio>
+</body>
+</html>

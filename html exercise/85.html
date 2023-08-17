@@ -1,0 +1,60 @@
+<!-- 87. How to define a cell in a table? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border = "1">  
+        <tr>  
+        <th>Type</th>  
+        <th>Description</th>  
+        </tr>  
+        <tr>  
+        <td>PHP</td>  
+        <td>Server side scripting</td>  
+        </tr>  
+        <tr>  
+        <td>JavaScript</td>  
+        <td>Client side scripting</td>  
+        </tr>  
+        </table> <hr>
+
+        <!-- a. How to specify the number of columns a cell should span? -->
+        <table border = "1">  
+            <tr>
+            <th>Product Name</th>
+            <th>Rate</th>
+            </tr>
+            <tr>
+            <td>Laptop</td>
+            <td>$250</td>
+            </tr>
+            <tr>
+            <td>Printer</td>
+            <td>$150</td>
+            </tr>
+            <tr>
+            <td colspan="2">Total: $400</td>
+            </tr>
+            </table> <hr>
+
+         <!-- b. How to specify one or more header cells a cell is related to? -->
+         <table style="width:100%" border="1">
+            <tr>
+            <th id="uid">User Id</th>
+            <th id="name">User Name</th>
+            <th id="address">Address</th>
+            <th id="phone">Phone No</th>
+            </tr>
+            <tr>
+            <td headers="uid">U001</td>
+            <td headers="name">Sudha Chandan</td>
+            <td headers="address">99,J.C.Bose Road,kal-125042</td>
+            <td headers="phone">5612445470</td>
+            </tr>
+            </table>
+</body>
+</html>

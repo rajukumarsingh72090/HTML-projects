@@ -1,0 +1,37 @@
+<!-- 62. How to define an embedded object? -->
+<!-- c. How to specify the height of the object? -->
+<!-- f. How to specify the width of the object? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    object 
+    <object width="400" height="400" data="https://www.w3resource.com/html-css-exercise/basic/solution/phpdemo1.swf">
+    </object> <hr>
+
+    <!-- a. How to specify the URL of the resource to be used by the object? -->
+    <body>Object Data
+        <object width="400" height="400" 
+        data="http://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4">
+        </object> <hr>
+
+        <!-- b. How to specify one or more forms the object belongs to? -->
+        <form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/object-from-answer-demo.php">
+                First Name: <input type="text" name="fname"> <br>
+               <input type="submit" value="Submit form">
+       </form> <br>
+        <object data="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" width="400" height="400" 
+        name="object1" form="form1"></object> <hr>
+
+        <object data="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" width="400" height="400" 
+name="object1"></object> <hr>
+
+<!-- e. How to specify the media type of data specified in the data attribute? -->
+<object data="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+</object>
+</body>
+</html>

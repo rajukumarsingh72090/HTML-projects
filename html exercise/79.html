@@ -1,0 +1,57 @@
+<!-- 81. How to define style information for a document? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {color:green;}
+        p {color:blue;}
+    </style>
+
+<!-- a. How to specify what media/device the media resource is optimized for? -->
+     <style>
+        h1 {color:#0000CD;}
+        p {color:#FFFFFF;}
+        body {background-color:#6495ED;}
+     </style>
+         <style media="print">h1 {color: #1E90FF;}p {color: #00BFFF;}body {background-color: #00CED1;}</style>
+
+         <!-- b. How to specify that the styles only apply to this element's parent element and that element's child elements? -->
+         <style>
+            h1 {color:sky;}
+            p {color:red;}
+         </style>
+
+        <!-- c. How to specify the media type of the style tag? -->
+         <style type="text/css">
+             h1 {color:green;}
+             p {color:OrangeRed;}
+         </style>
+</head>
+<body>
+    <h1>w3resource</h1>
+    <p>w3resource is a free, open-source tutorial.</p>
+
+    <!-- a. How to specify what media/device the media resource is optimized for? -->
+    <h1>w3resource</h1>
+<p><a href="http://localhost/html-css-exercise/basic/solution/try-style-media-answer.html" target="_blank">Click here</a> to open this page in a new window (without the tryit part)
+
+    <!-- b. How to specify that the styles only apply to this element's parent element and that element's child elements? -->
+    <div>
+        <style scoped>
+        h1 {color:blue;}
+        p {color:green;}
+        </style>
+        <h1>This heading should be blue</h1>
+        <p>This paragraph should be green.</p>
+    </div>
+        <h1>This heading should be sky</h1>
+        <p>This paragraph should be red.</p>
+
+        <!-- c. How to specify the media type of the style tag? -->
+        <h1>HTML5 tutorial</h4>
+            <p>I can develop excellent web applications with HTML5 and related APIs in HTML5 tutorial.</p>
+</body>
+</html>

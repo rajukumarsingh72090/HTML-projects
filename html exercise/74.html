@@ -1,0 +1,99 @@
+<!-- 76. How to define a drop-down list? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="example" action="html-select-option-optgroup-example.html" >  
+        Select one or more sections:  
+       <select name="languages" multiple>  
+       <optgroup label="Server_side">  
+       <option>PHP</option>  
+       <option>ASP</option>  
+       <option>Ruby on Rails </option>  
+       </optgroup>  
+       <optgroup label="Client_side">  
+       <option>JavaScript</option>  
+       <option>VB Script </option>  
+       </optgroup>  
+       </select>  
+  </form> <hr>
+
+  <!-- a. How to specify that the drop-down list should automatically get focus when the page loads? -->
+  <form name="example" action="html-select-option-optgroup-example.html" >  
+    Select one or more sections:  
+    <select name="languages" autofocus>  
+    <optgroup label="Server_side">  
+    <option>PHP</option>  
+    <option>ASP</option>  
+    <option>Ruby on Rails </option>  
+    </optgroup>  
+    <optgroup label="Client_side">  
+    <option>JavaScript</option>  
+    <option>VB Script </option>  
+    </optgroup>  
+    </select>  
+    </form> <hr>
+
+    <!-- b. How to specify that a drop-down list should be disabled? -->
+    <form name="example" action="html-select-option-optgroup-example.html" >  
+      Select one or more sections:  
+      <select name="languages" autofocus>  
+      <optgroup label="Server_side">  
+      <option>PHP</option>  
+      <option>ASP</option>  
+      <option>Ruby on Rails </option>  
+      </optgroup>  
+      <optgroup label="Client_side">  
+      <option disabled>JavaScript</option>  
+      <option disabled >VB Script </option>  
+      </optgroup>  
+      </select>  
+  </form> <hr>
+
+  <!-- c. How to defines one or more forms the select field belongs to? -->
+  <form method="POST" action="https://www.w3resource.com/html-css-exercise/basic/solution/select-form-answer-demo.php" id="form1">
+First name: <input type="text" name="fname"><br>
+<input type="submit">
+</form><br>
+<select name="languages" form ="form1">  
+<option value="PHP">PHP</option>  
+<option value="ASP">ASP</option>  
+<option value="Ruby">Ruby on Rails </option>  
+</select>  <hr>
+
+<!-- d. How to specify that multiple options can be selected at once? -->
+<!-- e. How to define a name for the drop-down list? -->
+<form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-list-answer-demo.php">
+<select name="animal" multiple>
+<option value="Lion">Lion</option>
+<option value="Tiger">Tiger</option>
+<option value="Elephant">Elephant</option>
+</select>  
+<input type="submit">
+</form> <hr>
+
+<!-- f. How to specify that the user is required to select a value before submitting the form? -->
+<form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/select-required-answer-demo.php">
+<select name="animals" required>
+<option value="">None</option>
+<option value="lion">Lion</option>
+<option value="tiger">Tiger</option>
+<option value="elephant">Elephant</option>
+</select>  
+<input type="submit">
+</form> <hr>
+
+<!-- g. How to define the number of visible options in a drop-down list? -->
+<form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/select-size-answer-demo.php">
+<select size="2">
+<option value="lion">Lion</option>
+<option value="tiger">Tiger</option>
+<option value="elephant">Elephant</option>
+</select>  
+</form>
+</body>
+</html>

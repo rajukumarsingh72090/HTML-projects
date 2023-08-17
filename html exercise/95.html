@@ -1,0 +1,44 @@
+<!-- 97. How to define a video or movie? -->
+<!-- a. How to specify that the video will start playing as soon as it is ready? -->
+<!-- b. How to specify that video controls should be displayed (such as a play/pause button etc)? -->
+<!-- c. How to set the height of the video player? -->
+<!-- h. How to specify the URL of the video file? -->
+<!-- i. How to set the width of the video player? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video width="320" height="200" controls>
+          <source src="http://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+          <source src="http://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">
+   </video> <hr>
+
+   <!-- d. How to specify that the video will start over again, every time it is finished? -->
+   <video width="300" height="250" controls loop>
+    <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+    <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">
+    </video> <hr>
+
+    <!-- e. How to specify that the audio output of the video should be muted? -->
+    <video width="300" height="250" controls muted>
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">
+    </video> <hr>
+
+    <!-- f. How to specify an image to be shown while the video is downloading, or until the user hits the play button? -->
+    <video width="200" height="250" poster="https://www.w3resource.com/images/w3resourcelogo.gif" controls >
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">
+    </video> <hr>
+
+    <!-- g. Preload the video when the page loads? -->
+    <video width="300" height="250" controls preload="auto">  
+        <source src="http://localhost/html-css-exercise/basic/solution/php-demo1.mp4" type="video/mp4">  
+        <source src="https://www.w3resource.com/html-css-exercise/basic/solution/php-demo1.ogg" type="video/ogg">  
+    </video>
+</body>
+</html>

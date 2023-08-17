@@ -1,0 +1,25 @@
+<!-- 66. How to define the result of a calculation? -->
+<!-- a. How to specify the relationship between the result of the calculation, and the elements used in the calculation? -->
+<!-- c. How to specify a name for the output element? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form 
+oninput="w3resource.value=parseInt
+(input.value)+parseInt (output.value)">0
+<input type="range" id="input" value="100">100 +<input type="number" id="output" value="10"> =<output name="w3resource" for="input output"></output>
+</form> <hr>
+
+<!-- b. How to specify one or more forms the output element belongs to? -->
+<form oninput="second_output.value=parseInt(a.value)+parseInt(b.value)" id="MyForm">
+    <input type="range" name="b" value="50" /> +<input type="number" name="a" value="10" /> =
+</form>
+<output form="MyForm" name="second_output" for="x y"></output>
+
+</body>
+</html>

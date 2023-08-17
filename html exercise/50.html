@@ -1,0 +1,31 @@
+<!-- 50. How to define a label for an input element? -->
+<!-- a. How to specify which form element a label is bound to? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click on one of the text labels to toggle the related control:</p>
+          <form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/label-answer-demo.php">
+          <label for="true">True</label>
+          <input type="radio" name="answer" value="true" checked><br>
+          <label for="false">False</label>
+          <input type="radio" name="answer" value="false"><br><br>
+          <input type="submit" value="Submit">
+        </form> <hr>
+
+
+    <p>The label for the first radio button is outside the form, but still a part of the form.Try clicking the text label to toggle the yes radio button.</p>
+            <form method="post"  action="https://www.w3resource.com/html-css-exercise/basic/solution/label-answer-demo.php" id="form1">
+              <input type="radio" name="answer"  value="yes"checked><br>
+              <label for="no">No</label>
+              <input type="radio" name="answer"  value="no"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+            <label for="yes"> 
+            <form="form1">Yes</label>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!-- 33. How to groups related elements in a form? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            Name: <input type="text" name="name" id="name"> <br> <br>
+            Email: <input type="Email" name="Email" id="Email"><br> <br>
+            number: <input type=numbert" name="number" id="number"><br> <br>
+        </fieldset>
+    </form>
+
+<!-- a. How to specify that a group of related form elements should be disabled -->
+    <form>
+        <fieldset disabled>
+            Name: <input type="text" name="name" id="name"> <br> <br>
+            Email: <input type="Email" name="Email" id="Email"><br> <br>
+            number: <input type=numbert" name="number" id="number"><br> <br>
+        </fieldset>
+    </form>
+
+    <!-- b. How to specify one or more forms the fieldset belongs to -->
+    <form>
+        <fieldset form="form1">
+            Name: <input type="text" name="name" id="name"> <br> <br>
+            Email: <input type="Email" name="Email" id="Email"><br> <br>
+            number: <input type=numbert" name="number" id="number"><br> <br>
+        </fieldset>
+    </form>
+
+    <!-- c. How to specify a name for the fieldset -->
+    <form>
+        <fieldset name="userDetails">
+            Name: <input type="text" name="name" id="name"> <br> <br>
+            Email: <input type="Email" name="Email" id="Email"><br> <br>
+            number: <input type=numbert" name="number" id="number"><br> <br>
+        </fieldset>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- 49. How to define a key-pair generator field? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/keygen-name -answer-demo.php" >
+      Place: <input type="text" name="place">
+      Encryption: <keygen name="security">
+      <input type="submit">
+    </form> <hr>
+
+    <!-- a. How to specify that a keygen element should automatically get focus when the page loads? -->
+    <form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/keygen-autofocus-answer-demo.php" >
+           Name: <input type="text" name="name">
+           Encryption: <keygen name="security" autofocus>
+           <input type="submit">
+    </form> <hr>
+
+    <!-- b. How to specify that a keygen element should be disabled? -->
+    <form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-alt-answer-demo.php" >
+         Country Name: <input type="text" name="name">
+         Encryption: <keygen name="security" disabled>
+         <input type="submit">
+   </form> <hr>
+
+   <!-- c. How to specify one or more forms the keygen element belongs to? -->
+   <form  method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/keygen-answer-demo.php" id="secureform">
+        Email: <input type="text" name="email">
+        <input type="submit">
+   </form>
+   <p>The keygen field below is outside the form element, but still part of the form.</p>
+   Encryption: <keygen name="security" form="secureform"> <hr>
+
+   <!-- e. How to define a name for the keygen element? -->
+   <form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/keygen-name-demo.php">
+    Address: <input type="text"name="place">
+    Encryption: <keygen name="security">
+    <input type="submit">
+  </form> 
+</body>
+</html>

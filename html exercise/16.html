@@ -1,0 +1,83 @@
+<!-- 16. How to define a clickable button? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>my button </button> 
+
+    <!-- a. How to specify that a button should automatically get focus when the page load? -->
+    <button autofocus>my button </button>
+
+    <!-- b. How to specify that a button should be disabled? -->
+    <button disabled>my button </button>
+
+    <!-- c. How to specify one or more forms the button belongs to? -->
+    <form id="form-1">this is my form 1</form>
+    <form id="form-2">this is my form 2</form>
+    <button form="form-1">form 1</button>
+    <button form="form-2">form 2</button>
+
+    <!-- d. How to specify where to send the form-data when a form is submitted? -->
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-value-answer-demo.php" method="post">
+        <input type="text" name="name" id="name" placeholder="your name">
+        <input type="text" name="name" id="name" placeholder="your nick name">
+        <input type="submit" name="" id="" value="submit">
+    </form>
+
+    <!-- e. How to specify how form-data should be encoded before sending it to a server? -->
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-value-answer-demo.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="" id="" type="file">
+        <input type="submit" name="" id="" value="upload-file">
+    </form>
+
+    <!-- f. How to send the form-data, which HTTP method to use? -->
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-value-answer-demo.php" method="post">
+        <input type="text" name="name" id="name" placeholder="your name">
+        <input type="text" name="name" id="name" placeholder="your nick name">
+        <input type="submit" name="" id="" value="submit">
+    </form>
+
+    <!-- g. How to specify that the form-data should not be validated on submission? -->
+    <form action="" method="post" novalidate>
+        <input type="text" name="name" id="name" placeholder="your name">
+        <input type="text" name="name" id="name" placeholder="your nick name">
+        <input type="submit" name="" id="" value="submit">
+    </form>
+
+    <!-- h. How to specify where to display the response after submitting the form? -->
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-formaction-
+    answer-demo.php" method="post" target="_blank">
+        <input type="text" name="name" id="name" placeholder="your name">
+        <input type="text" name="name" id="name" placeholder="your nick name">
+        <input type="submit" formaction="https://www.w3resource.com/html-css-exercise/basic/solution/button-formaction-
+        answer-demo.php" value="submit">
+    </form>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-value-answer-demo.php" method="post" target="_self">
+        <input type="text" name="name" id="name" placeholder="your name">
+        <input type="text" name="name" id="name" placeholder="your nick name">
+        <input type="submit" name="" id="" value="submit">
+    </form>
+
+    <!-- i. How to specify a name for the button? -->
+    <button name="submit_button">my button </button>
+
+    <!-- j. How to specify an initial value for the button? -->
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-value-answer-demo.php" method="post">
+    <button name="game" type="submit" value="cricket">cricket</button>
+    <button name="game" type="submit" value="football">football</button>
+
+    <!-- k. How to specify the type of button? -->
+    </form>
+    <form action="https://www.w3resource.com/html-css-exercise/basic/solution/button-type-answer-demo.php" method="post"id="nameform">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        Address: <input type="text" name="add"><br> 
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+        </form>
+</body>
+</html>

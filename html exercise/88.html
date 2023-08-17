@@ -1,0 +1,118 @@
+<!-- 90. How to define a header cell in a table? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+        border: 1px solid 
+        black;
+        }
+        </style>
+</head>
+<body>
+    <table border="1">  
+        <tr>  
+        <th>Type</th>  
+        <th>Description</th>  
+        </tr>  
+        <tr>  
+        <td>PHP</td>  
+        <td>Server side scripting</td>  
+        </tr>  
+        <tr>  
+        <td>JavaScript</td>  
+        <td>Client side scripting</td>  
+        </tr>  
+        </table> <hr>
+
+        <!-- a. How to specify an abbreviated version of the content in a header cell? -->
+        <table border = "1">  
+            <tr>  
+            <th abbr="type">Type of scripting 
+            </th>  
+            <th abbr="Description"> Description of scripting </th>  
+            </tr>  
+            <tr>  
+            <td>PHP</td>  
+            <td>Server side scripting</td>  
+            </tr>  
+            <tr>  
+            <td>JavaScript</td>  
+            <td>Client side scripting</td>  
+            </tr>  
+        </table> <hr>
+
+        <!-- b. How to specify the number of columns a header cell should span? -->
+        <table>  
+            <tr>  
+            <th colspan="2">Product Cost </th>  
+            </tr>  
+            <tr>  
+            <td>Mobile</td>  
+            <td>$180</td>  
+            </tr>  
+            <tr>  
+            <td>Laptop</td>  
+            <td>$200</td>  
+            </tr>  
+            </table>  <hr>
+
+        <!-- c. How to specify one or more header cells a cell is related to? -->
+        <table>  
+            <tr>  
+            <th colspan="3">Product </th>  
+            </tr>  
+            <tr>
+            <th headers="product">Productid</th>  
+            <th headers="product">Productname</th>
+            <th headers="product">Productcost</th>
+            </tr>  
+        </table> <hr>
+
+        <!-- d. How to specify the number of rows a header cell should span? -->
+        <table>
+            <tr>
+            <th>Product</th>
+            <th>Rate</th>
+            <th rowspan="4">Product for sale online.</th>
+            </tr>
+            <tr> 
+            <td>Laptop</td>
+            <td>$200</td>
+            </tr>
+            <tr>
+            <td>Mobile</td>
+            <td>$100</td>
+            </tr> 
+            <tr>
+            <td>Plotter(Hp)</td>
+            <td>$120</td>
+            </tr>
+        </table> <hr>
+
+        <!-- e. How to specify whether a header cell is a header for a column, row, or group of columns or rows? -->
+        <table width="200" border="1" cellpadding="2">  
+            <tr>  
+            <th scope="col">Student Code </th>  
+            <th scope="col">Percentage of marks</th>  
+            <th scope="col">Grade</th>  
+            <th scope="col">Remarks</th>  
+            <tr>  
+            </tr>  
+            <td>S001</td>  
+            <td>92</td>  
+            <td>A+</td>  
+            <td>Excellent</td>  
+            <tr>  
+            </tr>  
+            <td>S002</td>  
+            <td>76</td>  
+            <td>B+</td>  
+            <td>Good</td>  
+            </tr>  
+            </table> 
+</body>
+</html>

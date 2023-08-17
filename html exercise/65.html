@@ -1,0 +1,54 @@
+<!-- 65. How to define an option in a drop-down list? -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select>
+        <option value="php">PHP</option>  
+        <option value="asp">ASP</option>  
+        <option value="ruby">Ruby on Rails </option>  
+    </select>  <hr>
+
+    <!-- a. How to specify that an option should be disabled? -->
+    <select>
+        <option value="php" disabled>PHP</option>  
+        <option value="asp"> ASP</option>  
+        <option value="ruby"> Ruby on Rails 
+        </option>  
+    </select>  <hr>
+
+    <!-- b. How to specify a label for an option-group? -->
+    <form name="Fav_Sport" >  
+        <label>Favorite Sports</label>  
+        <select name="favoritesports" id="favoritesports">  
+        <optgroup label="Sports">  
+        <option label="Soccer">Soccer</option>  
+        <option label="Hockey">Hockey</option>  
+        <option label="Tennis">Tennis</option>  
+        <option label="Golf">Golf</option>  
+        </optgroup>  
+        </select>  
+        </form>  <hr>
+
+        <!-- c. How to specify that an option should be pre-selected when the page loads? -->
+        <select>  
+            <option>Soccer</option>  
+            <option selected>Hockey</option>  
+            <option>Polo</option>  
+            <option>Golf</option>  
+        </select>  <hr>
+
+        <!-- d. How to specify the value to be sent to a server? -->
+        <form method="post" action="https://www.w3resource.com/html-css-exercise/basic/solution/input-list-answer-demo.php">
+            <select name="animal">
+            <option value="carnivorous ">Lion</option>
+            <option value="largest cat species">Tiger</option>
+            <option value="large mammals">Elephant</option>
+            <input type="submit">
+       </form>
+</body>
+</html>
